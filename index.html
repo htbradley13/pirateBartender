@@ -15,9 +15,71 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<h1>Pirate Bartender</h1>
+	<h2>Please Answer the Following Questions:</h2>
+	<div id="questionPage">
+
+		<!-- Multiple Choice Answer Options Form. Giving them the same "name" attribute makes it so that only one radio button can be selected at a time. Adding the "required" attribute to at least one input will make an answer required. I put it on each one, incase an answer ever has to be removed, they all can trigger the requirement.  -->
+		<form id="questionAnswers">
+
+			<div class="form-group">
+			<!-- Question -->
+			<h3 id="question1Text"></h3>
+				<input id="input1A" type="radio" name="answersOne" class="choiceA" required>
+				<label id="answer1A" class="label-a">Yes</label>	
+				<input id="input1B" type="radio" name="answersOne" class="choiceB" required>
+				<label id="answer1B" class="label-b">No</label>
+			</div>		
+			
+			<div class="form-group">
+			<!-- Question -->
+			<h3 id="question2Text"></h3>
+				<input id="input2A" type="radio" name="answersTwo" class="choiceA" required>
+				<label id="answer2A" class="label-a">Yes</label>	
+				<input id="input2B" type="radio" name="answersTwo" class="choiceB" required>
+				<label id="answer2B" class="label-b">No</label>
+			</div>
+
+			<div class="form-group">
+			<!-- Question -->
+			<h3 id="question3Text"></h3>
+				<input id="input3A" type="radio" name="answersThree" class="choiceA" required>
+				<label id="answer3A" class="label-a">Yes</label>	
+				<input id="input3B" type="radio" name="answersThree" class="choiceB" required>
+				<label id="answer3B" class="label-b">No</label>
+			</div>			
+	
+			<div class="form-group">
+			<!-- Question -->
+			<h3 id="question4Text"></h3>
+				<input id="input4A" type="radio" name="answersFour" class="choiceA" required>
+				<label id="answer4A" class="label-a">Yes</label>	
+				<input id="input4B" type="radio" name="answersFour" class="choiceB" required>
+				<label id="answer4B" class="label-b">No</label>
+			</div>	
+
+			<div class="form-group">
+			<!-- Question -->
+			<h3 id="question5Text"></h3>
+				<input id="input5A" type="radio" name="answersFive" class="choiceA" required>
+				<label id="answer5A" class="label-a">Yes</label>	
+				<input id="input5B" type="radio" name="answersFive" class="choiceB" required>
+				<label id="answer5B" class="label-b">No</label>
+			</div>	
+
+			<button type="submit" class="btn btn-primary">Make My Drink!</button>
+		</form>
+
+	</div>
+
+	<div id="resultsSection">
+		<ul id="drinkIngredients">
+
+		</ul>
+	</div>
 
 	<!-- JavaScript Sources -->
-	<script src="//code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
